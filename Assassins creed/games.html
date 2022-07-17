@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assassins Creed</title>
+    <link rel="stylesheet" href="./assets/style.css">
+    <link href="./dist/output.css" rel="stylesheet">
+</head>
+
+<body class="flex flex-col">
+    <div class="box">
+        <nav id="nav" class="flex flex-col items-center">
+            <img id="logo" src="./assets/images/logo.svg">
+            <div class="links-container">
+                <a class="linkMenu" href="./index.html">Home</a><br>
+                <a class="linkMenu linkActive" href="./games.html">Games</a><br>
+                <a class="linkMenu" href="#">Books</a><br>
+                <a class="linkMenu" href="#">Characters</a>
+            </div>
+        </nav>
+        <div class="container-content" style="padding: 3%">
+            <div class="info-container-games flex">
+                <ion-icon class="buttonsPassar" id="buttonAnterior" name="chevron-back-circle-sharp"></ion-icon>
+                <ion-icon class="buttonsPassar" id="buttonProximo" name="chevron-forward-circle-sharp"></ion-icon>
+                <div class="games-container flex flex-col justify-center items-center" id="game">
+                    <div class="divInfoGame">
+                        <h1 id="nameGame"></h1>
+                        <div class="divInfoText"><span class="infos">Genre: </span>        <span class="infosDescription" id="genreGame"></span></div>
+                        <div class="divInfoText"><span class="infos">Remastered: </span>   <span class="infosDescription" id="remasterGame"></span></div>
+                        <div class="divInfoText"><span class="infos">Sinopse: </span>      <span class="infosDescription" id="sinopseGame"></span></div>
+                        <div class="divInfoText"><span class="infos">Developer: </span>    <span class="infosDescription" id="devGame"></span></div>
+                        <div class="divInfoText"><span class="infos">Release date: </span> <span class="infosDescription" id="releaseGame"></span></div>
+                        <div class="divInfoText"><span class="infos">Publisher: </span>    <span class="infosDescription" id="pubGame"></span></div>
+                        <div class="divInfoText"><span class="infos">Engine: </span>       <span class="infosDescription" id="engineGame"></span></div>
+                        <div class="divInfoText"><span class="infos">Composer: </span>     <span class="infosDescription" id="compGame"></span></div>
+                        <div class="divInfoText"><span class="infos">Platforms: </span>    <span class="infosDescription" id="platformGame"></span></div>
+                        <div class="divInfoText"><a id="siteGame" class="infos" target="_blank">Website</a></div>
+                        <div class="divInfoText"><iframe id="videoGame" width="660" height="315" src="https://www.youtube.com/embed/RjQ6ZtyXoA0" title="YouTube video player" frameborder="0" border="0px" allowfullscreen></iframe></div>
+                    </div>
+                </div>
+                <div class="div-img flex justify-start items-start">
+                    <img id="imgGame">
+                </div>
+            </div>
+            <footer class="content snap-end flex justify-center items-center" id="footer">
+                <i>&copy;2022</i>
+            </footer>
+        </div>
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
